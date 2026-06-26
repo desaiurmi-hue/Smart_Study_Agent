@@ -309,7 +309,7 @@
             ],
             "frozen": false,
             "icon": "file-text",
-            "last_updated": "2026-06-26T04:21:55.155Z",
+            "last_updated": "2026-06-26T05:34:04.494Z",
             "legacy": false,
             "lf_version": "1.10.1",
             "metadata": {
@@ -368,6 +368,7 @@
                 "name": "path",
                 "options": null,
                 "required_inputs": null,
+                "selected": "Message",
                 "tool_mode": true,
                 "types": [
                   "Message"
@@ -1589,6 +1590,7 @@
                 "cache": true,
                 "display_name": "Response",
                 "group_outputs": false,
+                "hidden": null,
                 "loop_types": null,
                 "method": "message_response",
                 "name": "response",
@@ -1606,6 +1608,7 @@
                 "cache": true,
                 "display_name": "Structured Response",
                 "group_outputs": false,
+                "hidden": null,
                 "loop_types": null,
                 "method": "json_response",
                 "name": "structured_response",
@@ -1623,9 +1626,11 @@
             "pinned": false,
             "template": {
               "_frontend_node_flow_id": {
+                "input_types": [],
                 "value": "aeece0fc-4260-4ce7-835d-a08b66eaabba"
               },
               "_frontend_node_folder_id": {
+                "input_types": [],
                 "value": "95e72608-808f-4006-9b86-865def27730f"
               },
               "_type": "Component",
@@ -1676,7 +1681,7 @@
                 "advanced": true,
                 "display_name": "API Key",
                 "dynamic": false,
-                "info": "Falls back to WATSONX_APIKEY environment variable",
+                "info": "Overrides global provider settings. Leave blank to use your pre-configured API Key.",
                 "input_types": [],
                 "load_from_db": false,
                 "name": "api_key",
@@ -1689,7 +1694,7 @@
                 "title_case": false,
                 "track_in_telemetry": false,
                 "type": "str",
-                "value": "wSzWPoQNcAdwf608Hx_IJesYSfSzwV-c-ZVYVKQ-Rcu_"
+                "value": ""
               },
               "base_url_ibm_watsonx": {
                 "_input_type": "DropdownInput",
@@ -1699,7 +1704,7 @@
                 "display_name": "watsonx API Endpoint",
                 "dynamic": false,
                 "external_options": {},
-                "info": "Falls back to WATSONX_URL environment variable",
+                "info": "The base URL of the API (IBM watsonx.ai only)",
                 "input_types": [],
                 "load_from_db": false,
                 "name": "base_url_ibm_watsonx",
@@ -1844,7 +1849,7 @@
                 "type": "str",
                 "value": ""
               },
-              "is_refresh": false,
+              "is_refresh": true,
               "max_iterations": {
                 "_input_type": "IntInput",
                 "advanced": true,
@@ -2132,7 +2137,7 @@
                 "advanced": true,
                 "display_name": "watsonx Project ID",
                 "dynamic": false,
-                "info": "Falls back to WATSONX_PROJECT_ID environment variable",
+                "info": "The project ID associated with the foundation model (IBM watsonx.ai only)",
                 "input_types": [],
                 "list": false,
                 "list_add_label": "Add More",
@@ -2903,6 +2908,7 @@
                 "cache": true,
                 "display_name": "Response",
                 "group_outputs": false,
+                "hidden": null,
                 "loop_types": null,
                 "method": "message_response",
                 "name": "response",
@@ -2920,6 +2926,7 @@
                 "cache": true,
                 "display_name": "Structured Response",
                 "group_outputs": false,
+                "hidden": null,
                 "loop_types": null,
                 "method": "json_response",
                 "name": "structured_response",
@@ -2937,9 +2944,11 @@
             "pinned": false,
             "template": {
               "_frontend_node_flow_id": {
+                "input_types": [],
                 "value": "aeece0fc-4260-4ce7-835d-a08b66eaabba"
               },
               "_frontend_node_folder_id": {
+                "input_types": [],
                 "value": "95e72608-808f-4006-9b86-865def27730f"
               },
               "_type": "Component",
@@ -2990,7 +2999,7 @@
                 "advanced": true,
                 "display_name": "API Key",
                 "dynamic": false,
-                "info": "Falls back to WATSONX_APIKEY environment variable",
+                "info": "Overrides global provider settings. Leave blank to use your pre-configured API Key.",
                 "input_types": [],
                 "load_from_db": false,
                 "name": "api_key",
@@ -3003,7 +3012,7 @@
                 "title_case": false,
                 "track_in_telemetry": false,
                 "type": "str",
-                "value": "wSzWPoQNcAdwf608Hx_IJesYSfSzwV-c-ZVYVKQ-Rcu_"
+                "value": ""
               },
               "base_url_ibm_watsonx": {
                 "_input_type": "DropdownInput",
@@ -3013,7 +3022,7 @@
                 "display_name": "watsonx API Endpoint",
                 "dynamic": false,
                 "external_options": {},
-                "info": "Falls back to WATSONX_URL environment variable",
+                "info": "The base URL of the API (IBM watsonx.ai only)",
                 "input_types": [],
                 "load_from_db": false,
                 "name": "base_url_ibm_watsonx",
@@ -3158,7 +3167,7 @@
                 "type": "str",
                 "value": ""
               },
-              "is_refresh": false,
+              "is_refresh": true,
               "max_iterations": {
                 "_input_type": "IntInput",
                 "advanced": true,
@@ -3446,7 +3455,7 @@
                 "advanced": true,
                 "display_name": "watsonx Project ID",
                 "dynamic": false,
-                "info": "Falls back to WATSONX_PROJECT_ID environment variable",
+                "info": "The project ID associated with the foundation model (IBM watsonx.ai only)",
                 "input_types": [],
                 "list": false,
                 "list_add_label": "Add More",
@@ -3592,7 +3601,7 @@
             ],
             "frozen": false,
             "icon": "bot",
-            "last_updated": "2026-06-26T04:40:23.973Z",
+            "last_updated": "2026-06-26T05:34:04.499Z",
             "legacy": false,
             "lf_version": "1.10.1",
             "metadata": {
@@ -3624,6 +3633,7 @@
                 "cache": true,
                 "display_name": "Response",
                 "group_outputs": false,
+                "hidden": null,
                 "loop_types": null,
                 "method": "message_response",
                 "name": "response",
@@ -3641,6 +3651,7 @@
                 "cache": true,
                 "display_name": "Structured Response",
                 "group_outputs": false,
+                "hidden": null,
                 "loop_types": null,
                 "method": "json_response",
                 "name": "structured_response",
@@ -3658,9 +3669,11 @@
             "pinned": false,
             "template": {
               "_frontend_node_flow_id": {
+                "input_types": [],
                 "value": "aeece0fc-4260-4ce7-835d-a08b66eaabba"
               },
               "_frontend_node_folder_id": {
+                "input_types": [],
                 "value": "95e72608-808f-4006-9b86-865def27730f"
               },
               "_type": "Component",
@@ -3711,9 +3724,9 @@
                 "advanced": true,
                 "display_name": "API Key",
                 "dynamic": false,
-                "info": "Falls back to WATSONX_APIKEY environment variable",
+                "info": "Overrides global provider settings. Leave blank to use your pre-configured API Key.",
                 "input_types": [],
-                "load_from_db": false,
+                "load_from_db": true,
                 "name": "api_key",
                 "override_skip": false,
                 "password": true,
@@ -3724,7 +3737,7 @@
                 "title_case": false,
                 "track_in_telemetry": false,
                 "type": "str",
-                "value": ""
+                "value": "WATSONX_APIKEY"
               },
               "base_url_ibm_watsonx": {
                 "_input_type": "DropdownInput",
@@ -3734,7 +3747,7 @@
                 "display_name": "watsonx API Endpoint",
                 "dynamic": false,
                 "external_options": {},
-                "info": "Falls back to WATSONX_URL environment variable",
+                "info": "The base URL of the API (IBM watsonx.ai only)",
                 "input_types": [],
                 "load_from_db": false,
                 "name": "base_url_ibm_watsonx",
@@ -3879,7 +3892,7 @@
                 "type": "str",
                 "value": ""
               },
-              "is_refresh": false,
+              "is_refresh": true,
               "max_iterations": {
                 "_input_type": "IntInput",
                 "advanced": true,
@@ -4167,7 +4180,7 @@
                 "advanced": true,
                 "display_name": "watsonx Project ID",
                 "dynamic": false,
-                "info": "Falls back to WATSONX_PROJECT_ID environment variable",
+                "info": "The project ID associated with the foundation model (IBM watsonx.ai only)",
                 "input_types": [],
                 "list": false,
                 "list_add_label": "Add More",
@@ -4486,7 +4499,7 @@
         },
         "id": "Prompt Template-aGV0E",
         "measured": {
-          "height": 372,
+          "height": 428,
           "width": 320
         },
         "position": {
@@ -4498,9 +4511,9 @@
       }
     ],
     "viewport": {
-      "x": -1092,
-      "y": -282.875,
-      "zoom": 1
+      "x": 31.948789571694533,
+      "y": 84.7411545623836,
+      "zoom": 0.5316573556797021
     }
   },
   "description": "Generate, Innovate, Communicate.",
